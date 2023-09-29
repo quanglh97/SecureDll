@@ -1,0 +1,5 @@
+LIBRARY
+EXPORTS
+	GetDataWindowKernel
+	SetDataWindowKernel
+	SetDataWindowKernelX86

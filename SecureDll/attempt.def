@@ -1,0 +1,4 @@
+LIBRARY
+EXPORTS
+	GetDataWindowKernel
+	AuthenGoogle
