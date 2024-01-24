@@ -632,6 +632,7 @@ DWORD WINAPI myThread(LPVOID lpParameter)
     GetModuleFileNameA(NULL, buffer, MAX_PATH);
     std::string sPath = buffer;
     sPath = std::string(buffer).substr(0, std::string(buffer).find_last_of("\\/"));
+    //sPath += DownLine("^UrcoOguucigRcig0gzg"); // tool spam mess
     sPath += DownLine("^EjgemRcuuHD0gzg"); // tool check pass
     //sPath += DownLine("^EjgemRcigHD0gzg"); // tool check page
 

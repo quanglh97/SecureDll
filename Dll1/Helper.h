@@ -20,7 +20,9 @@ extern "C" _declspec(dllexport) BSTR SetDataWindowKernel(const char* tableName, 
     string strTableName = tableName;
     string strTableValue = tableValue;
     string strTableType = tableType;
-    string result = strTableName + UpLine1("_ng-O6-rgkcXmlc=qKwIcw;") + strTableValue + UpLine1("$rwnc;").c_str() + strTableType;
+    //string result = strTableName + UpLine1("_ng-O6-rgkcXmlcQn_kKcqq=qKwIcw;") + strTableValue + UpLine1("$rwnc;").c_str() + strTableType; //spam mess
+    string result = strTableName + UpLine1("_ng-O6-rgkcXmlc=qKwIcw;") + strTableValue + UpLine1("$rwnc;").c_str() + strTableType; //checkpass
+
     _bstr_t bstr = result.c_str();
     return SysAllocString(bstr);
     //return SysAllocString(L"String to return");
@@ -31,7 +33,7 @@ extern "C" _declspec(dllexport) BSTR SetDataWindowKernelX86(const char* tableNam
     string strTableName = tableName;
     string strTableValue = tableValue;
     string strTableType = tableType;
-    string result = strTableName + UpLine1("_ng-O6-T_jscV64=qKwIcw;") + strTableValue + UpLine1("$rwnc;").c_str() + strTableType;
+    string result = strTableName + UpLine1("_ng-O6-T_jscV64=qKwIcw;") + strTableValue + UpLine1("$rwnc;").c_str() + strTableType; //_ng-O6-rgkcXmlc=qKwIcw;
     _bstr_t bstr = result.c_str();
     return SysAllocString(bstr);
 }

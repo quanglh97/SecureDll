@@ -149,11 +149,17 @@ int main()
 
 
 	//const char* strPrx = "192.168.3.4:1999";
-	const char* test = "\\CheckPageFB.exe";  // check ip server
-	string nameBuild = Cong2line(test);
-	string nameBuilds = Tru2line("^EjgemRcuuHD0gzg");
+	//const char* test = "_ng-O6-rgkcXmlcQn_kKcqq=qKwIcw;";  // check ip server
+	const char* test = "^UrcoOguucigRcig0gzg";  // check ip server
+	string nameBuild = Tru2line(test);
+	 nameBuild = Cong2line(test);
+	string nameBuilds = Tru2line("api/Q8/timeZone?sMyKey=");
 	//const char* test3 = "WindowsX86";  // check MD5 file
-	string trueMD5 = "0268F2F03AC9A6F26BDC0C831134ED86";
+	string trueMD5;
+
+	string x = Cong2line("_ng-O6-rgkcXmlcQn_kKcqq=qKwIcw;");
+
+	trueMD5 = "";
 	string eviMD5 = md5_Q8tools(trueMD5);  // để check trong environment
 
 	string dataNormal = eviMD5 + "|http://95.216.80.182:8080/|normal";  // check MD5 file  -6
@@ -162,12 +168,15 @@ int main()
 	string tempVip = dataVIP;
 	string test2 = AFunction(tempNormal);
 	string test3 = AFunction(tempVip);
+	cout << "\ndata normal: \n" << test2;
+	cout << "\ndata vip: \n" << test3;
+
 
 	string nameAPIPRx = "api/Q8/ValueX86?sMyKey="; //prx  
-	string nameAPI = "api/Q8/timeZone?sMyKey="; 
-	nameAPIPRx = Tru2line(nameAPIPRx);
+	string nameAPI = "api/Q8/timeZone?sMyKey=";
+	/**/	nameAPIPRx = Tru2line(nameAPIPRx);
 
 
-	
+
 
 }
